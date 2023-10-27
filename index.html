@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Jak stworzyć trzypoziomowe drop-down menu w HTML i CSS | DevMentor.pl</title>
+  </head>
+  <body>
+    <nav class="menu">
+      <ul class="menu__list">
+        <li class="menu__item">
+          <a href="#home" class="menu__link">Strona główna</a>
+        </li>
+        <li class="menu__item menu__item--parent">
+          Oferta ▼
+          <ul class="menu__sublist menu__sublist--bottom">
+            <li class="menu__item">
+              <a href="#shop" class="menu__link">Sklep</a>
+            </li>
+            <li class="menu__item menu__item--parent">
+              Kursy wideo ▶
+              <ul class="menu__sublist menu__sublist--right">
+                <li class="menu__item">
+                  <a href="/html-css-course" class="menu__link">HTML i CSS</a>
+                </li>
+                <li class="menu__item">
+                  <a href="/js-course" class="menu__link">JavaScript</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li class="menu__item">
+          <a href="#contact" class="menu__link">Kontakt</a>
+        </li>
+      </ul>
+    </nav>
+  </body>
+</html>
